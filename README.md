@@ -1,4 +1,5 @@
 # College Football WR Performance Study
+### Yisong Li
 
 ## Summary
 This project will be conducted by a team of students in the Gordon E. Crosby, Jr. MBA Program at the University of Missouri.  The team members are: Edwin Downs, Elie Dvorin, Ryan Frederking, Yisong Li, Phillip Liu, James Stacy, and Kyle Swartz.
