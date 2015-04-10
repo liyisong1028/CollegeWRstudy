@@ -50,7 +50,8 @@ for (i in 1:length(DATAPATH)){
         player <- read.csv(paste(DATAPATH[i], "player.csv", sep = ""))
         team <- read.csv(paste(DATAPATH[i], "team.csv", sep = ""))
         conference <- read.csv(paste(DATAPATH[i], "conference.csv", sep = ""))
-        output <- TPR(play, pass, player, team, conference)
+        qb <- read.csv(paste("./data/QB_EPA/QB_EPA_", YEAR[i], ".csv", sep = ""))
+        output <- TPR(play, pass, player, team, conference, qb)
         filePath <- paste("./TPR/WR TPR ", YEAR[i], ".csv", sep = "")
-        write.csv(output, file = filePath)
+        write.csv(output, file = filePath, row.names = F)
 }
